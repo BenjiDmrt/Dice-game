@@ -3,8 +3,8 @@ const player1  = document.getElementById("img1")
 const player2  = document.getElementById("img2")
 
 function rollDice(){
-    let random1 = Math.floor(Math.random() * 6 + 1);
-    let random2 = Math.floor(Math.random() * 6 + 1);
+    let random1 = Math.floor(Math.random() * 6 ) + 1;
+    let random2 = Math.floor(Math.random() * 6 ) + 1;
     console.log(random1, random2);
     if(random1 > random2){
         h1.textContent = "Player 1 Wins";
